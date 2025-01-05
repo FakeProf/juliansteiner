@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Steiner</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <meta name="description" content="Website über mich/ Julian Steiner, Webentwickler" />
+   <meta name="keywords" content="Webdesign, Webentwicklung, Hannover, Webdevelopment, Julian Steiner"/>
+   <link rel="icon" href="images/JS Logo.jpg" type="image/png" sizes="16x16">
+   <link rel="icon" href="images/JS Logo.jpg" type="image/png" sizes="32x32">
+   <link rel="apple-touch-icon" href="images/JS Logo.jpg" sizes="180x180">
+   <link href="font/static/OpenSans-Italic.ttf" rel="stylesheet">
+   <!--<a href="https://www.vecteezy.com/free-vector/j">J Vectors by Vecteezy /Credit for the Logo</a>-->
+</head>
+<body>
+  <div class="cookie-banner">
+    Diese Webseite nutzt Cookies, um die Benutzererfahrung zu verbessern. Indem Sie weiter auf der Webseite verweilen, stimmen Sie der<a href="Cookies.html" style="text-decoration:underline ;"> Nutzung von Cookies zu</a>.
+    <button class="accept-cookies-button">OK</button>
+  </div>
+  
+  <script>
+    const acceptCookiesButton = document.querySelector('.accept-cookies-button');
+    acceptCookiesButton.addEventListener('click', function() {
+      const cookieBanner = document.querySelector('.cookie-banner');
+      cookieBanner.style.display = 'none';
+    });
+    </script>
+  <div class="ring">Loading
+    <span id="ring"></span>
+  </div>
+
+
+
+
+
+
+
+ 
+
+
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <nav id="navbar" class="" style="cursor:crosshair">
+    <div class="nav-wrapper">
+      <!-- Navbar Logo -->
+      <div class="logo">
+        <!-- Logo Placeholder for Ilustration -->
+        <a href="#home"><i class="fa fa-light fa-code" id="codelogo"></i>  <h2 class="h22" style="cursor: crosshair;">
+          <span class="spans" id="title">   Julian Steiner</span>
+          <span class="spans" id="title">  Julian Steiner</span>
+          <span class="spans" id="title">Julian Steiner</span>
+          <span class="spans">  Webdevelopment</span>
+          <span class="spans" >  Ihre Webseite?</span>
+        </h2></a>
+      </div>
+
+      <!-- Navbar Menu -->
+     
+     <!--<label class="hamburger-menu">
+        <input type="checkbox" />
+      </label>
+      <aside class="sidebar">
+        <nav>
+          <a href="#home">HOME</a>
+          <a href="#services">SERVICE</a>
+          <a href="#about">ÜBER MICH</a>
+          <a href="#contact">KONTAKT</a>
+        </nav>
+      </aside> -->
+   
+      <style>    .sidebar a {display: block;    text-decoration: none; }@media  screen and (max-width:800px) {  #codelogo{  display: none;}}   @media screen and (min-width: 800px) { .sidebar { display: none; } .hamburger-menu:has(input:checked) {  color: white; }}   @media screen and (max-width: 768px) { :root {  --bar-width: 60px;  --bar-height: 8px;  --hamburger-gap: 6px; --foreground: #333; --background: white; --hamburger-margin: 10px; --animation-timing: 200ms ease-in-out;   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);  }}
+
+        
+ .hamburger-menu {
+          --x-width: calc(var(--hamburger-height) * 1.41421356237);
+          display: flex;
+          flex-direction: column;
+          gap: var(--hamburger-gap);
+          width: max-content;
+          position: fixed;
+          top: var(--hamburger-margin);
+          left: var(--hamburger-margin);
+          z-index: 2000000000000000000000000000000000;
+          cursor: pointer;
+        }
+        
+        .hamburger-menu:has(input:checked) {
+          --background: #333;
+        }
+        
+        .hamburger-menu:has(input:focus-visible)::before,
+        .hamburger-menu:has(input:focus-visible)::after,
+        .hamburger-menu input:focus-visible {
+          border: 1px solid var(--background);
+          box-shadow: 0 0 0 1px var(--foreground);
+        }
+        
+        .hamburger-menu::before,
+        .hamburger-menu::after,
+        .hamburger-menu input {
+          content: "";
+          width: var(--bar-width);
+          height: var(--bar-height);
+          background-color: var(--foreground);
+          border-radius: 9999px;
+          transform-origin: left center;
+          transition: opacity var(--animation-timing), width var(--animation-timing),
+            rotate var(--animation-timing), translate var(--animation-timing),
+            background-color var(--animation-timing);
+        }
+        
+        .hamburger-menu input {
+          appearance: none;
+          padding: 0;
+          margin: 0;
+          outline: none;
+          pointer-events: none;
+        }
+        
+        .hamburger-menu:has(input:checked)::before {
+          rotate: 45deg;
+          width: var(--x-width);
+          translate: 0 calc(var(--bar-height) / -2);
+      background-color: white;
+        }
+        
+        .hamburger-menu:has(input:checked)::after {
+          rotate: -45deg;
+          width: var(--x-width);
+          translate: 0 calc(var(--bar-height) / 2);
+    background-color: white;
+        }
+        
+        .hamburger-menu input:checked {
+          opacity: 0;
+          width: 0;
+          
+        }
+        
+        .sidebar {
+          transition: translate var(--animation-timing);
+          translate: -200%;
+          padding: 0.5rem 1rem;
+          padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+          background-color: var(--foreground);
+          color: var(--background);
+          max-width: 10rem;
+          min-height: 100vh;
+          position: absolute;
+          z-index: 100000;
+        }
+        
+        .hamburger-menu:has(input:checked) + .sidebar {
+          translate: -20%;
+        }</style>
+      <button type="button" onclick="aud_play_pause()" id="play" >
+     <!--<svg version="1.1" id="plays" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="50px" width="50px"
+      viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+      <path class="stroke-solid" fill="none" stroke="#ddbe72"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+      C97.3,23.7,75.7,2.3,49.9,2.5"/>
+      <path class="icons" fill="#ddbe72" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+      
+      
+    </svg>-->           
+    <div class="center">
+    <div id="control">
+      <div class="border"></div>
+      <div class="play"></div>
+    </div>
+  </div>
+</button> 
+<script>var playButton = document.getElementById('control');
+
+playButton.addEventListener('click', e => {
+    e.preventDefault();
+    playButton.classList.toggle('is--playing');
+  });</script>
+
+<audio id="myAudio" autoplay loop>
+  <source src="mindfulness-journey-ambient-boy-main-version-13506-09-58.mp3" type="audio/mpeg">
+  This HTML5 player is not supported by your browser
+</audio>
+
+<script>
+  function aud_play_pause() {
+   var myAudio = document.getElementById("myAudio");
+   if (myAudio.paused) {
+     myAudio.play();
+   } else {
+     myAudio.pause();
+   }
+  }
+  </script>
+
+
+      <!-- Navbar Links -->
+      <ul id="menu">
+        <li><a href="#home" style="cursor: crosshair;">Home</a></li><!--
+     --><li><a href="#services"style="cursor: crosshair;">Service</a></li><!--
+     --><li><a href="#about"style="cursor: crosshair;">Über mich</a></li><!--
+     --><li><a href="#contact"style="cursor: crosshair;">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--ham menu-->
+  <label class="hamburger-menu">
+    <input type="checkbox" />
+  </label>
+  <aside class="sidebar">
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#services">SERVICE</a>
+      <a href="#about">ÜBER MICH</a>
+      <a href="#contact">KONTAKT</a>
+    </nav>
+  </aside>
+  <style>
+    .sidebar a {
+      display: block;
+  
+      text-decoration: none;
+      
+   
+    }
+@media  screen and (max-width:668px) {
+
+#codelogo{
+display: none;
+ }
+}
+    @media screen and (min-width: 668px) {
+      .sidebar {
+        display: none;
+       
+      }
+      .hamburger-menu:has(input:checked) {
+      color: white;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+    
+    :root {
+      --bar-width: 60px;
+      --bar-height: 8px;
+      --hamburger-gap: 6px;
+      --foreground: #333;
+      --background: white;
+      --hamburger-margin: 10px;
+      --animation-timing: 200ms ease-in-out;
+      --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    }}
+    
+    .hamburger-menu {
+      --x-width: calc(var(--hamburger-height) * 1.41421356237);
+      display: flex;
+      flex-direction: column;
+      gap: var(--hamburger-gap);
+      width: max-content;
+      position: fixed;
+      top: var(--hamburger-margin);
+      left: var(--hamburger-margin);
+      z-index: 2000000;
+      cursor: pointer;
+      
+    }
+    
+    .hamburger-menu:has(input:checked) {
+      --background: #333;
+    }
+    
+    .hamburger-menu:has(input:focus-visible)::before,
+    .hamburger-menu:has(input:focus-visible)::after,
+    .hamburger-menu input:focus-visible {
+      border: 1px solid var(--background);
+      box-shadow: 0 0 0 1px var(--foreground);
+    }
+    
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+      content: "";
+      width: var(--bar-width);
+      height: var(--bar-height);
+      background-color: var(--foreground);
+      border-radius: 9999px;
+      transform-origin: left center;
+      transition: opacity var(--animation-timing), width var(--animation-timing),
+        rotate var(--animation-timing), translate var(--animation-timing),
+        background-color var(--animation-timing);
+    }
+    
+    .hamburger-menu input {
+      appearance: none;
+      padding: 0;
+      margin: 0;
+      outline: none;
+      pointer-events: none;
+    }
+    
+    .hamburger-menu:has(input:checked)::before {
+      rotate: 45deg;
+      width: var(--x-width);
+      translate: 0 calc(var(--bar-height) / -2);
+  background-color: white;
+    }
+    
+    .hamburger-menu:has(input:checked)::after {
+      rotate: -45deg;
+      width: var(--x-width);
+      translate: 0 calc(var(--bar-height) / 2);
+background-color: white;
+    }
+    
+    .hamburger-menu input:checked {
+      opacity: 0;
+      width: 0;
+      
+    }
+    
+    .sidebar {
+      transition: translate var(--animation-timing);
+      translate: -200%;
+      padding: 0.5rem 1rem;
+      padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+      background-color: var(--foreground);
+      color: var(--background);
+      max-width: 10rem;
+      min-height: 100vh;
+     position: fixed;
+     
+    }
+    .sidebar a {padding:30% 0 3% 0;}
+    .hamburger-menu:has(input:checked) + .sidebar {
+      translate: 0%;
+    }</style>
+  
+   <!--Menu Icon 
+  <div class="menuIcon"style="right:200px;position:fixed;z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000;"  >
+    <span class="icon icon-bars" ></span>
+    <span class="icon icon-bars overlay">
+   <ul class="overlay-menu"  style="top:8%; left: -500%; ">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul> </span>
+  </div>  
+  
+  
+
+  <script>
+  let menuIcon = document.querySelector('.menuIcon');
+  let nav = document.querySelector('.overlay-menu');
+
+  menuIcon.addEventListener('click', () => {
+    if (nav.style.transform != 'translateX(0%)') {
+          nav.style.transform = 'translateX(0%)';
+          nav.style.transition = 'transform 0.2s ease-out';
+      } else { 
+          nav.style.transform = 'translateX(-100%)';
+          nav.style.transition = 'transform 0.2s ease-out';
+      }
+  });
+
+
+  // Toggle Menu Icon ========================================
+  let toggleIcon = document.querySelector('.menuIcon');
+  
+  toggleIcon.addEventListener('click', () => {
+    
+      if (toggleIcon.className != 'menuIcon toggle') {
+          toggleIcon.className += ' toggle';
+      } else
+         {   toggleIcon.className = 'menuIcon';
+      }
+  });
+  </script>
+-->
+  
+  
+
+    <div class="content"></div>  
+        
+
+
+  <!-- Home Section -->
+  
+  
+  
+  <div id="home">
+  
+    <div class="container">
+      <div class="section"> 
+        <header>
+          
+
+    <!--Title-->
+    <section>
+      <div id="waviyfixed">
+      <div class="waviy">
+        <span style="--i:1">W</span>
+        <span style="--i:2">e</span>
+        <span style="--i:3">b</span>
+        <span style="--i:4">d</span>
+        <span style="--i:5">e</span>
+        <span style="--i:6">s</span>
+        <span style="--i:7">i</span>
+        <span style="--i:8">g</span>
+        <span style="--i:9">n</span>
+      </div>
+      <b class="bwave" style="color:white"> by Julian Steiner</b>
+     </div>
+      <!--
+      <div class="content">
+        <h2>Julian</h2>
+        <h2>Julian</h2>
+      </div>-->
+      </section>
+      <!--fade Text-->
+      <h1>
+        <span class="span">There</span>
+        <span class="span">are</span>
+        <span class="span">no</span>
+        <span class="span">limits</span>
+        <span class="span">to</span>
+        <span class="span">what</span>
+        <span class="span">you</span>
+        <span class="span">can</span>
+        <span class="span">accomplish,</span>
+        <span class="span">except</span>
+        <span class="span">the</span>
+        <span class="span">limits</span>
+        <span class="span">you</span>
+        <span class="span">place</span>
+        <span class="span">on</span>
+        <span class="span">your</span>
+        <span class="span">own</span>
+        <span class="span">thinking.</span><br>
+        <h5>-Brian Tracy</h5>
+      </h1>
+      
+    </header>
+ 
+  </div>
+</div>
+
+<div class="section">
+
+       
+<img id="Bild" src="https://juliansteiner.de/Me-pic-light.jpeg" style="
+
+    -webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.547)));
+;
+
+-webkit-user-drag: none;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;">
+<span  class="text"> &nbsp Ihre Idee<br> Ihre Webseite</span>
+      </div>
+
+
+
+  <div class="section" style="display: flex; align-items: center; justify-content: center;">
+  <!--
+
+    <video playsinline autoplay muted loop poster="Portfolio Video.mp4" id="bgvid">
+      
+      <source src="Website Vid final.mp4" type="video/mp4"  >
+    </video>
+  -->
+  <iframe id="video-web" 
+  src="https://www.youtube.com/embed/OqfP5EDZ3EY">
+  </iframe>
+  </div>
+  <div class="section">
+    
+  </div>
+  
+  <div class="section" ><div id="services"> </div>
+<p style="position:absolute;writing-mode: vertical-lr;color: white;font-size: 60px;right: 3%; margin-top: 9%;"><b>Website Auswahl</b></p>
+  <div class="container" >
+   
+     <div class="card" >
+       <h3 > </h3>
+       <p>Innerhalb dieses Plans werde ich Ihnen eine Webseite fertigstellen, welche ihren Job macht und Ihnen oder Ihrer Firma einen guten Eindruck verleiht. </p>
+       <button onclick="window.location.href='mailto:mail@juliansteiner.de'"style="cursor:pointer;" title="Mail@juliansteiner.de">50-100€ </button>
+      </div>
+    <div class="card" >
+      <h3></h3>
+      <p>In diesem Plan werde ich eng mit Ihnen zusammenarbeiten und bei Bedarf von Fotos/Bildern auf der Website (nur innerhalb von Hannover) werde ich auch persöhnlich bei Ihnen vorbeikommen.</p>
+      <button onclick="window.location.href='mailto:mail@juliansteiner.de'"style="cursor:pointer;" title="Mail@juliansteiner.de">100-200€</button>
+    </div>
+    <div class="card" >
+      <h3></h3>
+      <p>Hier werde ich auf alle ihre Wünsche eingehen und in nahem Kontakt zu ihnen stehen, um Änderungen an der Website vorzunehmen und sie bestmöglich gestalten und aktuell zu halten.</p>
+      <button onclick="window.location.href='mailto:mail@juliansteiner.de'" style="cursor:pointer;" title="Mail@juliansteiner.de">Variabel</button>
+    </div>
+  
+</div>
+
+</div>
+<style>.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+    
+    position: relative;
+    width: var(--card-width);
+    height: var(--card-height);
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.5s;
+    
+  }
+
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 100%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff33,
+      #3c66e34e 43%,
+      #4e00c266
+      );
+    position: absolute;
+    z-index: -1;
+    top: 36%;
+    left: -2%;
+    animation: spin 4.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  @property --rotate {
+    syntax: "<angle>";
+      initial-value: 132deg;
+      inherits: false;
+    }
+
+  :root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+
+  .card {
+    position: relative;
+    width: var(--card-width);
+    height: var(--card-height);
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.5s;
+   
+  }
+
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 100%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff33,
+      #3c66e34e 43%,
+      #4e00c266
+      );
+    position: absolute;
+    z-index: -1;
+    top: 36%;
+    left: -2%;
+    animation: spin 4.5s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+  .card {font-family: 'FAMILY_NAME';
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    width: 260px;
+    height: 360px;
+    background-color: rgba(255, 255, 255, 0.738);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 3.5%;
+    position: relative;
+  }
+  .card p {
+    padding: 10px;
+  }
+  .card h3 {
+    padding: 25px;
+    margin-top: 18%;
+  }
+
+  .card:hover {
+    scale: 1.2;
+  }
+  .card:nth-child(1) {
+    background-image: url(images/basic.jpeg);
+    background-size: 100% 36%;
+    background-repeat: no-repeat;
+    background-color: rgb(127, 212, 182);
+    background-image: linear-gradient(
+      to bottom rgb(110, 194, 148) rgb(59, 163, 126)
+    );
+  }
+
+  .card:nth-child(2) {
+    background-image: url(images/intermediate.jpeg);
+    background-size: 100% 36%;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(
+      to bottom rgb(110, 194, 148) rgb(59, 163, 126)
+    );
+  }
+
+
+  
+  .card:nth-child(3) {
+    background-image: url(images/personal.jpeg );
+    background-size: 100% 36%;
+    background-repeat: no-repeat;
+    background-color: rgb(150, 219, 195);
+  }
+  .card p {
+    padding-top: 15%;}
+    .card button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 15px;
+    
+  }
+</style>
+
+
+
+ 
+  
+<!--
+  
+  <div class="container12">
+    <ul class="slides">
+      <li id="slide1"><img src="ich im see.jpeg" alt="" /></li>
+      <li id="slide2"><img src="blätter.jpeg" alt="" /></li>
+      <li id="slide3"><img src="spiegelung.jpeg" alt="" /></li>
+      <li id="slide4"><img src="mic.jpeg" alt="" /></li>
+      <li id="slide5"><img src="processed-b2bb4333-2453-42c5-9689-3e331f56cefe_T1qnTjhd.jpeg" width="71.1%"  alt="" /></li>
+       <li id="slide6"><img src="processed-1a4f068d-e3c3-41eb-ae6d-7fd8e1cecf0c_2gEhz6OY.jpeg" width="71.1%" alt="" /></li>
+        <li id="slide7"><img src="straße.jpeg" alt="" /></li>
+    </ul>
+    
+    <ul class="thumbnails">
+      <li>
+        <a href="#slide1"><img src="ich im see.jpeg" /></a>
+        </li>
+        <li>
+          <a href="#slide2"><img src="blätter.jpeg" /></a>
+          </li>
+          <li>
+            <a href="#slide3"><img src="spiegelung.jpeg" /></a>
+            </li>
+            <li>
+        <a href="#slide4"><img src="mic.jpeg" /></a>
+      </li>
+      <li> 
+        <a href="#slide5"><img src="processed-b2bb4333-2453-42c5-9689-3e331f56cefe_T1qnTjhd.jpeg" width="71.1%"  /></a> 
+      </li>
+      <li> 
+        <a href="#slide6"><img src="processed-1a4f068d-e3c3-41eb-ae6d-7fd8e1cecf0c_2gEhz6OY.jpeg" width="71.1%"/></a> 
+      </li>
+      <li> 
+        <a href="#slide7"><img src="straße.jpeg" /></a> 
+      </li>
+      
+    </ul>
+    </div>
+    -->
+    
+ 
+  <!--
+  <div id="pillar">
+
+    <div class="row">
+      <div class="wrap">
+        <div class="left">Nebenbei</div>
+        <div class="right1"><img src="ich im see.jpeg" width="100%" height="100%" style="-webkit-user-drag: none;
+          user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;"></div>  
+        </div>
+    </div>
+      
+      <div class="row">
+      <div class="wrap">
+        <div class="left">Fotografiere </div>
+        <div class="right2"><img src="blätter.jpeg" width="90%" height="90%" style="-webkit-user-drag: none;
+          user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;"></div>  
+        </div>
+    </div>
+      
+      <div class="row">
+      <div class="wrap">
+        <div class="left">ich</div>
+        <div class="right3"><img src="tastatur.jpeg" width="80%" height="80%" style="-webkit-user-drag: none;
+          user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;"></div>  
+        </div>
+    </div>
+      
+       <div class="row">
+      <div class="wrap">
+        <div class="left">als hobby</div>
+        <div class="right4"><img src="mic.jpeg" width="70%" height="70%" style="-webkit-user-drag: none;
+          user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;"></div>  
+        </div>
+    </div>
+      
+      <div class="row">
+      <div class="wrap">
+        <div class="left">mit meiner</div>
+        <div class="right5"><img src="pflanze.jpeg" width="65%" height="65%" style="-webkit-user-drag: none;
+          user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;"></div>  
+        </div>
+    </div>
+      
+      <div class="row">
+      <div class="wrap">
+        <div class="left">canon eos 250d</div>
+        <div class="right6"><img src="spiegelung.jpeg" width="55%" height="55%" style="-webkit-user-drag: none;
+          user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;"></div>  
+        </div>
+    </div>
+    
+    
+  </div>
+
+      
+  
+  
+</div>
+
+-->
+</div>
+<div id="about" >
+</div>
+<div class="sections">
+
+<div data-aos="fade-up"
+data-aos-anchor-placement="bottom-bottom">
+<h3 data-aos="fade-up"
+data-aos-anchor-placement="bottom-bottom" class="text1">Ich bin Julian Steiner 20 Jahre alt und beschäftige micht seit 2 Jahren mit dem erstellen von Webseiten</h3></div>
+   
+    <div data-aos="zoom-in"  data-aos-duration="1000000"><h2 class="h2">Über mich</h2></div>
+   
+    <figure class="snip1213">
+     <div class="textaufbild">website by Julian Steiner 
+      <br><br><br><h6>Hover me</h6>
+     </div>
+      <img  class="bild1" src="images/pexels-gradienta-6985001.jpg" width="500" height="300" />
+      <figcaption>
+    
+      
+        <div class="web1">
+          <img class="web" src="https://fakeprof.github.io/Portfolio/Home650.png" >
+          <img class="web" src="https://fakeprof.github.io/Portfolio/About Me650.png" >
+          <img class="web" src="https://fakeprof.github.io/Portfolio/Experience650.png" >
+          <img class="web" src="https://fakeprof.github.io/Portfolio/Skills650.png" >
+          <img class="web" src="https://fakeprof.github.io/Portfolio/Portfolio650.png" >
+          <img class="web" src="https://fakeprof.github.io/Portfolio/Testimonial650.png" >
+          <img class="web" src="https://fakeprof.github.io/Portfolio/Contact650.png" >
+      </div>
+        
+      
+        
+        </figcaption>
+    </figure>   
+ 
+  
+    <div class="sections">    
+    <div class="text2">
+    <h3>Die größten Fortschritte erzielte ich durch Harvards CS50 und Sololearn</h3></div>
+   
+    <figure class="snip12134">
+      <img  class="bild2" src="images/Screenshot (16).png" width="500" height="300" />
+      <figcaption>
+        <h3>Screenshot by Julian Steiner</h3>
+        <p>CSS von https://juliansteiner.de </p>
+        <a href="https://juliansteiner.de/style.css" class="read-more">Read More</a>
+      </figcaption>
+    </figure>
+     
+    
+    <div class="tech-slideshow">
+      <div class="mover-1"></div>
+      <div class="mover-2"></div>
+    </div>
+
+    <div data-aos="fade-up-left">
+            <img class="bild3" src="images/VormPc2.jpg" style="-webkit-user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            background-color: transparent;
+            width:50%;
+            height:auto;
+            margin-left: 24.5%;
+            " />
+          </div>
+    <h2 class="h2" style="font-family: 'FAMILY_NAME';
+  font-size: 30px;
+  line-height: 1.5;
+  color: #333;
+  
+  
+  box-sizing: border-box;">Das Schicksal, existiert es wirklich?</h2><br>
+    <div data-aos="fade-up">
+      <p class="text3">
+        <div class="essay"font-family: 'FAMILY_NAME';
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+ 
+  box-sizing: border-box;">
+          <h2></h2>
+        <div>
+          <input type="checkbox" class="read-more-state" id="post-1" />
+        
+          <p class="read-more-wrap"> Was ist eigentlich Schicksal? Schicksal ist eine Art vorbestimmter Lebensweg, welcher von der Sichtweise abhängend schon immer vorbestimmt und klar war. Es kann beeinflussen, dass man Entscheidungen genau so trifft, wie es das Schicksal will, sodass man irgendwann im Leben zu dem Punkt kommt, wo das Schicksal einen hingeschickt hat. Doch es hängt immer von der Sichtweise jedes Menschen ab, inwieweit man denkt, dass das Schicksal existiert.<span class="read-more-target">  Es gibt viele Menschen, die gar nicht erst glauben, dass das Schicksal existiert und auch welche, die nur in extremen Glücksfällen daran glauben. Es gibt auch noch die extremere Variante, in der manche Menschen denken, dass das Leben komplett vorbestimmt ist und wirklich JEDE Entscheidung bereits vom Schicksal entschieden wurde. Und wenn man eine Entscheidung nicht fällt, um von dem Schicksal abzuweichen, kann es sehr gut sein, dass dieser Teil bereits zum Schicksal gehört. Kann man wirklich an sein oder das Schicksal glauben und vertrauen? Es gibt immer wieder Momente im Leben, in denen man fast sogar glauben muss, dass das Schicksal existiert, da man z.B. auf einmal sehr viel Glück hat oder auch Pech und man könnte sich denken, dass das eigene Schicksal es so für einen will und es so bestimmt ist. Doch es ist wirklich jedem überlassen, ob man an das Schicksal glaubt oder nicht. Dies kann auch viel mit dem Glauben zu tun haben, da Gläubige sozusagen auf etwas warten und das Schicksal könnte dies erfüllen, da eine Tat Gottes auch als Schicksal gewertet werden könnte. Glauben und Schicksal ähneln sich eigentlich sogar sehr, da beide den weiteren Lebensweg beeinflussen. Man ist als Mensch meist nur richtig gläubig, wenn man bereits Geschehnisse im Leben hatte, in welchen man sehr viel Glück hatte und daran glauben muss und wenn dies nicht der Fall ist, besteht der Glauben nur aus einer dünnen geistigen Ebene. Das Wort Schicksal wird z.B. verwendet, wenn man mit etwas abschließt und die Folgen in Kauf nimmt und sich sozusagen seinem Schicksal fügt oder sein Schicksal besiegelt. Mann kann es auch verwenden, indem man es mit Glück in Bezug nimmt, indem man sein Schicksal herausfordert und somit darauf hofft, dass das Schicksal einem Glück bringt. Im Gegenzug zu den Menschen, die an das Schicksal glauben, stehen die, die Fakten in den Mittelpunkt des Lebens stellen und sich bewusst sind, dass nicht das Schicksal einen an diese Stelle im Leben befördert hat, sondern die eigenen Taten und harte Arbeit. 
+Ich persönlich glaube nicht an das, Schicksal, welches einen das ganze Leben über begleitet und führt, sondern an einige Zufälle, welche in dem Moment eine Gabe des Schicksals sind, aber auch wieder abebben. Es hängt auch davon ab, wie viele prägende Erfahrungen der Mensch in seinem Leben gemacht hat, wodurch auch das Alter eine Rolle spielt. Schicksal kann man auch mit dem Wort Zufall in Verbindung bringen, da etwas beim Schicksal genau wie beim Zufall plötzlich und unvorbereitet eintrifft.
+    </span></p>
+          
+          <label for="post-1" class="read-more-trigger"> 
+             <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+      
+    
+        </div></p></div>
+   
+<br>
+  
+
+
+
+
+			
+		
+
+
+  
+
+    <p data-aos="flip-up" style="color:rgb(2, 2, 2); font-size: 25px;  text-align: center; 
+    
+  
+    padding: 10px;
+    
+    margin: 5% 40% 0px 40%; "> Meine Zertifikate
+    </p>
+    
+   
+   
+      
+   
+   
+   
+   <div class="slider">
+     <div class="rotator">
+       <div class="items">
+         <img src="images/Html.png">
+       </div>
+       <div class="items">
+         <img src="images/CSS.png">
+       </div>
+       <div class="items">
+         <img src="images/Javasrcipt Sololearn.png">
+       </div>
+       <div class="items">
+         <img src="images/javascript intermediate certificate.png">
+       </div>
+       <div class="items">
+         <img src="images/Responsive webdesign.png">
+       </div>
+       <div class="items">
+         <img src="images/webdevfundamentals.png">
+         </div>
+         <div class="items">
+           <img src="images/web dev certificate.png">
+           </div>
+           <div class="items">
+             <img src="images/PHP Sololearn.png">
+             </div>
+             <div class="items">
+               <img src="images/Javasrcipt Sololearn.png">
+               </div>
+     </div>
+   </div>
+  <!--
+    <div id="skills">
+      <img id="skills1" src="images/Html.png"style="width:80%; height:auto">
+      <img id="skills2" src="images/CSS.png"style="width:80%; height:auto" >
+      <img id="skills3" src="images/Javasrcipt Sololearn.png" style="width:80%; height:auto">
+      <img id="skills3" src="images/javascript intermediate certificate.png" style="width:80%; height:auto">
+      <img id="skills3" src="images/Responsive webdesign.png" style="width:80%; height:auto">
+      <img id="skills3" src="images/webdevfundamentals.png" style="width:80%; height:auto">
+      <img id="skills3" src="images/web dev certificate.png" style="width:80%; height:auto">
+      <img id="skills3" src="images/PHP Sololearn.png" style="width:80%; height:auto">
+      
+      
+      </div>
+      -->
+      
+
+<div style="display: flex; justify-content: center ; align-items: center ; margin: 10% 0 0 0; ">
+  
+            <h4 class="animate-charcter"> 
+    
+<a href="minigame/minigame.html" target="_blank">Minigames</a>
+
+            </h4>
+    
+  
+  
+  </div>
+
+        
+<style>
+        
+    
+    .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  margin:1% 0% 0% 0 ;
+  
+ 
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+    </style>
+
+
+<!--
+<p style="font-size: 1.5em; text-align: center; padding: 100px 0 20px 0; ">
+  Dies sind Websites, welche ich bereits erstellt habe: <br><a href="https://bäckerei-die-drei.site/" style="text-decoration: underline"> Bäckerei-die-Drei.site</a>
+  </p>-->
+  <div id="websites" style="overflow-x: hidden ;display: flex; justify-content: center;align-items: center;">
+    <!--<iframe src="https://bäckerei-die-drei.site" style="height: 600px;width: 1000px;">
+      </iframe>-->
+      </div>
+      <div style="height: 100px;"></div>
+
+
+<!--
+    <h3  style="margin-top: 5%;text-align: center;"  >
+    
+    Kleines mini game
+  </h3>
+  <div id="game" onclick="jump()">
+    <div id="character">:)</div>
+    <div id="block">:(</div>
+  </div>
+  
+<script> 
+
+  
+  var character = document.getElementById("character");
+var block = document.getElementById("block");
+var counter=0;
+function jump(){
+  if(character.classList == "animate"){return}
+  character.classList.add("animate");
+  setTimeout(function(){
+    character.classList.remove("animate");
+  },300);
+  
+  block.style.animation = "block 1s infinite linear";
+
+    block.classList.add("animates");
+    
+  }
+  var checkDead = setInterval(function() {
+    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+    if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
+      block.style.animation = "none";
+      alert("Game Over. score: "+Math.floor(counter/100));
+      counter=0;
+    }else{
+      counter++;
+      document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+    }
+  }, 10);
+  
+</script>
+
+
+
+
+
+<div class="circle"></div>
+
+<div class="counter"></div>
+   
+    </div>
+    -->
+
+
+
+    <hr>
+
+   <div class="seethrough">
+    <div id="contact">
+    <footer>
+      
+      <p> <div id="h1" style="margin-top: 0%">
+          Kontakt
+          </div>
+         </p>
+      
+      
+            <p style="color:rgba(255, 255, 255, 0.423); ">Julian Steiner</p><br>
+          <div style="color:rgba(255, 255, 255, 0.423);margin-top: 8%;">
+            &rarr; <a  class="mail" href="mailto:mail@juliansteiner.de">
+              mail@juliansteiner.de </a> &larr;
+              </div>
+      
+   
+       
+     <!--
+      <form action="index.html" method="post">
+        <div class="input-group">
+          <input required="" type="text" name="text" autocomplete="off" class="input">
+          <label class="user-label">&nbsp&nbsp Vorname</label>
+          <input required="" type="text" name="text" autocomplete="off" class="input">
+          <label class="user-label">&nbsp&nbsp Nachname</label>
+          <input required="" type="text" name="text" autocomplete="off" class="input">
+          <label class="user-label">&nbsp&nbsp Email</label>
+              
+              <textarea name="message" required class="input"></textarea>
+              <label class="user-label">&nbsp&nbsp Nachricht</label> <br>
+         </form>    <button onclick="window.location.href='mailto:mail@juliansteiner.de'"  id="submit">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span> 
+                  
+                  <h4>Gerne einfach fragen</h4> </button> -->
+                  
+          
+      </div>
+      <h4  style="color: aliceblue;transform: translateY(-100%);" >
+       <a href="Impressum.html"style="display:block; margin:0 47% 0 47% ;"> Impressum</a> 
+       <a href="Cookies.html" style="display:block; margin:0 47.5% 0 47.5% ;" >Cookies</a>
+       <p id="copy">&copy Julian Steiner 2024</p>
+       </h4>
+       
+       
+    
+ </div></footer>
+
+  
+ 
+   
+
+
+<!--<div style="height: 1000px;"></div>-->
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+ 
+
+</body>
+</html>
