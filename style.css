@@ -220,7 +220,7 @@ html{
   @keyframes showAnimation{ 
     to {
    
-      background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+      background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
       background-size: cover;
       background-attachment: fixed;
       
@@ -1011,7 +1011,7 @@ height: 100vh;
   @keyframes showAnimation{ 
     to {
    
-      background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+      background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
       background-size: cover;
       background-attachment: fixed;
     }}
@@ -1023,10 +1023,10 @@ height: 100vh;
   animation-fill-mode:forwards;}
   @keyframes slowAnimation{ 
     to {
-      background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+      background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
       background-size: cover;
     }}
-      
+
 /*background:-webkit-radial-gradient( #ff9c60 0%, #ffd6b8 100%);*/
   
    .section:nth-child(3) {z-index: 2;position: sticky;overflow: hidden;top: 1.5rem;
@@ -1038,7 +1038,7 @@ background-color: rgba(221, 221, 221, 0.574);
 }
 .section:nth-child(5) {z-index: 4;position: sticky;overflow: hidden;top:0;
 height: 135vh;
-  background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+  background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
   
   background-size: cover;
   background-attachment: fixed;box-sizing: border-box; font-family: 'Spartan';
@@ -2533,7 +2533,7 @@ visibility: hidden;
     @keyframes showAnimation{ 
       to {
      
-        background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+        background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
         background-size: cover;
         background-attachment: fixed;
         
@@ -2559,7 +2559,7 @@ visibility: hidden;
     text-transform:uppercase;
     text-shadow:0 0 10px white;
     box-shadow:0 0 20px rgba(0,0,0,.5);
-    animation:hideAnimation .2s  ease-out 3s;
+    animation:hideAnimation .2s  ease-out 1s;
     animation-fill-mode:forwards;
   
   }
@@ -2586,7 +2586,7 @@ visibility: hidden;
     animation:animateC 2s linear infinite;
   }
   #ring
-  {  animation:hideAnimation .2s ease-out 3s;
+  {  animation:hideAnimation .2s ease-out 1s;
     animation-fill-mode:both;
     z-index: 1000;
     display:block;
@@ -2693,7 +2693,7 @@ visibility: hidden;
      transform: translateY(-50%);
 display: flex;
 justify-content: center;
-  animation: thisAnimation 1000000000000000000000000000000s ease-in 3.2s ;
+  animation: thisAnimation 1000000000000000000000000000000s ease-in 1.2s ;
   visibility: hidden;
     }
     
@@ -2707,7 +2707,7 @@ justify-content: center;
 }
     
      .bwave{
-      animation: thisAnimation 1000000000000000000000000000000s ease-in 3.2s ;
+      animation: thisAnimation 1000000000000000000000000000000s ease-in 1.2s ;
       visibility: hidden;
       display: flex;
         justify-content: center;
@@ -2779,81 +2779,81 @@ justify-content: center;
   }
   
   .span:nth-child(1) {
-    animation: fade-in 0.8s 4.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 2.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(2) {
-    animation: fade-in 0.8s 4.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(3) {
-    animation: fade-in 0.8s 4.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 2.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(4) {
-    animation: fade-in 0.8s 4.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(5) {
-    animation: fade-in 0.8s 4.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 2.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(6) {
-    animation: fade-in 0.8s 4.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(7) {
-    animation: fade-in 0.8s 4.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 2.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(8) {
-    animation: fade-in 0.8s 4.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(9) {
-    animation: fade-in 0.8s 4.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 2.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(10) {
-    animation: fade-in 0.8s 5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(11) {
-    animation: fade-in 0.8s 5.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 3.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(12) {
-    animation: fade-in 0.8s 5.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 3.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(13) {
-    animation: fade-in 0.8s 5.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 3.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(14) {
-    animation: fade-in 0.8s 5.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 3.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(15) {
-    animation: fade-in 0.8s 5.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 3.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(16) {
-    animation: fade-in 0.8s 5.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(17) {
-    animation: fade-in 0.8s 5.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 3.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   .span:nth-child(18) {
-    animation: fade-in 0.8s 5.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 3.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
   
   h5{margin: 25% 0 0 0 ;
     position: absolute;
   z-index: 1;
-    animation: fade-in 0.8s 6.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    animation: fade-in 0.8s 4.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
@@ -2978,7 +2978,7 @@ justify-content: center;
    /* background:-webkit-linear-gradient(left, #f5f7fa 0%, #c3cfe2 100%);*/
   
      background-color: #000;
-      animation:showAnimation .5s ease-out 2.2s ;
+      animation:showAnimation .5s ease-out .5s ;
       animation-fill-mode:forwards;
       
     }
@@ -2986,7 +2986,7 @@ justify-content: center;
     @keyframes showAnimation{ 
       to {
      
-        background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+        background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
         background-size: cover;
         background-attachment: fixed;
       }}
@@ -2998,7 +2998,7 @@ justify-content: center;
     animation-fill-mode:forwards;}
     @keyframes slowAnimation{ 
       to {
-        background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+        background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
         background-size: cover;
       }}
         
@@ -3016,7 +3016,7 @@ justify-content: center;
   }
   .section:nth-child(6) {z-index: 4;position: sticky;overflow: hidden;top:0;
   height: 135vh;
-    background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+    background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
     
     background-size: cover;
     background-attachment: fixed;box-sizing: border-box; font-family: 'Spartan';
@@ -4638,7 +4638,7 @@ visibility: hidden;
     @keyframes showAnimation{ 
       to {
      
-        background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+        background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
         background-size: cover;
         background-attachment: fixed;
         
@@ -5078,7 +5078,7 @@ visibility: hidden;
     @keyframes showAnimation{ 
       to {
      
-        background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+        background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
         background-size: cover;
         background-attachment: fixed;
       }}
@@ -5090,7 +5090,7 @@ visibility: hidden;
     animation-fill-mode:forwards;}
     @keyframes slowAnimation{ 
       to {
-        background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+        background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
         background-size: cover;
       }}
         
@@ -5105,7 +5105,7 @@ visibility: hidden;
   }
   .section:nth-child(5) {z-index: 4;position: sticky;overflow: hidden;top:0;
   height: 135vh;
-    background-image: url(https://fakeprof.github.io/Julian-Steiner/%C3%A4ste%20im%20winter.jpeg  );
+    background-image: url(https://juliansteiner.de/images/%C3%A4ste%20im%20winter.jpeg  );
     
     background-size: cover;
     background-attachment: fixed;box-sizing: border-box; font-family: 'Spartan';
