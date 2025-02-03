@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pjöngjing Special Forces</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .header {
+            background: url(imagesairsoft/horizontal/1000046504.jpg) no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            width: auto;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: translateY(-50px);
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+        }
+        .about {
+            margin-top: 50px;
+        }
+        .member {
+            padding-bottom: 200px;
+           
+        }
+        .member-container {
+    display: flex;
+    justify-content: space-around; /* Distributes members evenly */
+    flex-wrap: nowrap; /* Prevents wrapping to the next line */
+}
+        .slider {
+            
+            display: flex;
+            overflow: hidden;
+            width: 500px;
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+        }
+        .slider img {
+           
+            border-radius: 5px;
+             transition: transform 0.5s ease-in-out; 
+        }
+        .imgnormal{
+            height: 100%;
+            width: 500px;
+        }
+        
+        .imglarge{
+        height: 750px;
+        width: 500px;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-500px); }
+            40% { transform: translateX(-1000px); }
+            60% { transform: translateX(-1500px); }
+            80% { transform: translateX(-2000px); }
+            100% { transform: translateX(0); }
+        }
+        .slider img {
+            animation: slide 12s infinite;
+        }
+        .gallery-container {
+            margin-top: 50px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            
+        }
+        .gallery img:hover {
+            transform: scale(2);
+        }
+        
+        .gallery2-container {
+            margin-top: 50px;
+        }
+        .gallery2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 50px 5% 0 5%;
+        }
+        .gallery2 img {
+            width: auto;
+            height:200px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            
+        }
+        .gallery2 img:hover {
+            transform: scale(2);
+        }
+        .contact {
+            margin-top: 50px;
+            padding: 20px;
+            background: #333;
+            color: white;
+            border-radius: 10px;
+        }
+        .nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #ffcc00;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">Über Uns</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+    <div class="header">Willkommen bei Pjöngjing Special Forces</div>
+    <div class="container" id="about">
+        <h2>Über Uns</h2>
+      <div class="member-container">
+        <div class="member">
+            <h3>Julian</h3>
+            <div class="slider">
+                <img src="imagesairsoft/julian.jpg"  alt="Teamfoto 1" class="imgnormal">
+                <img src="imagesairsoft/julian1.jpg" alt="Actionfoto 2" class="imgnormal">
+                <img src="imagesairsoft/julian2.jpg" alt="Spielszene 3" class="imgnormal">
+                <img src="imagesairsoft/julian3.jpg" alt="Teamfoto 1" class="imgnormal">
+                <img src="imagesairsoft/julian4.jpg" alt="Actionfoto 2" class="imgnormal">
+            </div>
+        </div>
+        <div class="member">
+            <h3>Jonas H.</h3>
+            <div class="slider">
+                <img src="imagesairsoft/hasemann.jpg" alt="Spielszene 6" class="imgnormal">
+                <img src="imagesairsoft/hasemann2.jpg" alt="Spielszene 7" class="imgnormal">
+                <img src="imagesairsoft/hasemann3.jpg" alt="Spielszene 6" class="imgnormal">
+                <img src="imagesairsoft/hasemann4.jpg" alt="Spielszene 6" class="imglarge">
+                <img src="imagesairsoft/hasemann.jpg" alt="Spielszene 6" class="imgnormal">
+            </div>
+        </div>
+        <div class="member">
+            <h3>Jonas D.</h3>
+            <div class="slider">
+                <img src="imagesairsoft/dunz.jpg" alt="Spielszene 6" class="imgnormal">
+                <img src="imagesairsoft/dunz2.jpg" alt="Spielszene 7" class="imgnormal">
+                <img src="imagesairsoft/dunz3.jpg" alt="Spielszene 6" class="imgnormal">
+                <img src="imagesairsoft/dunz.jpg" alt="Spielszene 6" class="imgnormal">
+                <img src="imagesairsoft/dunz.jpg" alt="Spielszene 6" class="imgnormal">
+            </div>
+        </div>
+        <div class="member">
+            <h3>JJ</h3>
+            <div class="slider">
+                <img src="imagesairsoft/jj.jpg" alt="Spielszene 6" class="imglarge">
+                <img src="imagesairsoft/jj2.jpg" alt="Spielszene 7" class="imglarge">
+                <img src="imagesairsoft/jj3.jpg" alt="Spielszene 6" class="imgnormal">
+                <img src="imagesairsoft/jj.jpg" alt="Spielszene 6" class="imglarge">
+                <img src="imagesairsoft/jj2.jpg" alt="Spielszene 6" class="imglarge">
+            </div>
+        </div></div>
+    </div>
+
+    <div class="container gallery-container" id="gallery">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="imagesairsoft/1.jpg" alt="Spielszene 1">
+            <img src="imagesairsoft/3.jpg" alt="Spielszene 2">
+            <img src="imagesairsoft/4.jpg" alt="Spielszene 3">
+            <img src="imagesairsoft/5.jpg" alt="Spielszene 4">
+            <img src="imagesairsoft/7.jpg" alt="Spielszene 5">
+            <a href="imagesairsoft/19.jpg" download><img src="imagesairsoft/19.jpg" alt="Spielszene 6"></a> 
+            <img src="imagesairsoft/18.jpg" alt="Spielszene 7">
+            <img src="imagesairsoft/8.jpg" alt="Spielszene 8">
+            <img src="imagesairsoft/20.jpg" alt="Spielszene 9">
+            <img src="imagesairsoft/24.jpg" alt="Spielszene 10">
+            <img src="imagesairsoft/6.jpg" alt="Spielszene 11">
+            <img src="imagesairsoft/12.jpg" alt="Spielszene 12">
+            <img src="imagesairsoft/13.jpg" alt="Spielszene 13">
+            <img src="imagesairsoft/14.jpg" alt="Spielszene 14">
+            <img src="imagesairsoft/15.jpg" alt="Spielszene 15">
+            <img src="imagesairsoft/16.jpg" alt="Spielszene 16">
+            <img src="imagesairsoft/17.jpg" alt="Spielszene 17">
+            <img src="imagesairsoft/9.jpg" alt="Spielszene 18">
+            <img src="imagesairsoft/10.jpg" alt="Spielszene 19">
+            <img src="imagesairsoft/11.jpg" alt="Spielszene 20">
+            <img src="imagesairsoft/21.jpg" alt="Spielszene 21">
+            <img src="imagesairsoft/22.jpg" alt="Spielszene 22">
+            <img src="imagesairsoft/23.jpg" alt="Spielszene 23">
+            <img src="imagesairsoft/2.jpg" alt="Spielszene 24">
+            <img src="imagesairsoft/25.jpg" alt="Spielszene 25">
+            
+            <img src="imagesairsoft/27.jpg" alt="Spielszene 27">
+            <img src="imagesairsoft/28.jpg" alt="Spielszene 28">
+            <img src="imagesairsoft/29.jpg" alt="Spielszene 29">
+            <img src="imagesairsoft/30.jpg" alt="Spielszene 30">
+            <img src="imagesairsoft/31.jpg" alt="Spielszene 31">
+            <img src="imagesairsoft/32.jpg" alt="Spielszene 32">
+            <img src="imagesairsoft/33.jpg" alt="Spielszene 33">
+            <img src="imagesairsoft/34.jpg" alt="Spielszene 34">
+            <img src="imagesairsoft/35.jpg" alt="Spielszene 35">
+            <img src="imagesairsoft/36.jpg" alt="Spielszene 36">
+            <img src="imagesairsoft/37.jpg" alt="Spielszene 37">
+            <img src="imagesairsoft/38.jpg" alt="Spielszene 38">
+            <img src="imagesairsoft/39.jpg" alt="Spielszene 39">
+            <img src="imagesairsoft/40.jpg" alt="Spielszene 40">
+            <img src="imagesairsoft/41.jpg" alt="Spielszene 41">
+            <img src="imagesairsoft/42.jpg" alt="Spielszene 42">
+            <img src="imagesairsoft/43.jpg" alt="Spielszene 43">
+            <img src="imagesairsoft/44.jpg" alt="Spielszene 44">
+            <img src="imagesairsoft/45.jpg" alt="Spielszene 45">
+
+
+        </div>
+        <div class="gallery2">
+            <img src="imagesairsoft/horizontal/1000046447.jpg" alt="Spielszene 1">
+            <img src="imagesairsoft/horizontal/1000046448.jpg" alt="Spielszene 2">
+            <img src="imagesairsoft/horizontal/1000046470.jpg" alt="Spielszene 3">
+            <img src="imagesairsoft/horizontal/1000046473.jpg" alt="Spielszene 4">
+            <img src="imagesairsoft/horizontal/1000046480.jpg" alt="Spielszene 5">
+            <img src="imagesairsoft/horizontal/1000046486.jpg" alt="Spielszene 6">
+            <img src="imagesairsoft/horizontal/1000046504.jpg" alt="Spielszene 7">
+            <img src="imagesairsoft/horizontal/1000046519.jpg" alt="Spielszene 8">
+            <img src="imagesairsoft/horizontal/1000046535.jpg" alt="Spielszene 9">
+            <img src="imagesairsoft/horizontal/1000046539.jpg" alt="Spielszene 10">
+            <img src="imagesairsoft/horizontal/1000046545.jpg" alt="Spielszene 11">
+            <img src="imagesairsoft/horizontal/1000046598.jpg" alt="Spielszene 12">
+            <img src="imagesairsoft/horizontal/1000046600.jpg" alt="Spielszene 13">
+           
+            
+
+
+
+
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Kontakt</h2>
+        <a href="mailto:mail@juliansteiner.de" style="text-decoration: none; color: white;">Mail: mail@juliansteiner.de</a>
+        <p></p>
+        <p></p>
+    </div>
+</body>
+</html>
