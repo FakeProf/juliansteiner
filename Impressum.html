@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Julian Steiner</title>
+    
+    <!-- Performance Critical -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Impressum von Julian Steiner - Webentwickler aus Hannover">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Icons -->
+    <link rel="icon" href="images/JS Logo.jpg" type="image/jpeg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style-optimized.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Julian Steiner</h2>
+                <span class="brand-subtitle">Webentwicklung</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">← Zurück zur Website</a>
+                <a href="Cookies.html" class="nav-link">Datenschutz</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 100px; min-height: 100vh;">
+        <div class="container">
+            <section class="legal-section">
+                <div class="section-header">
+                    <h1>Impressum</h1>
+                    <p>Angaben gemäß § 5 TMG</p>
+                </div>
+
+                <div class="legal-content">
+                    <div class="legal-card">
+                        <h2>Diensteanbieter</h2>
+                        <p><strong>Julian Steiner</strong><br>
+                        Gernsstraße 36<br>
+                        30659 Hannover<br>
+                        Deutschland</p>
+                    </div>
+
+                    <div class="legal-card">
+                        <h2>Kontaktmöglichkeiten</h2>
+                        <p><strong>E-Mail-Adresse:</strong> mail@juliansteiner.de</p>
+                    </div>
+
+                    <div class="legal-card">
+                        <h2>Haftungs- und Urheberrechtshinweise</h2>
+                        <h3>Haftungsausschluss</h3>
+                        <p>Die Inhalte dieses Onlineangebotes wurden sorgfältig und nach unserem aktuellen Kenntnisstand erstellt, dienen jedoch nur der Information und entfalten keine rechtlich bindende Wirkung, sofern es sich nicht um gesetzlich verpflichtende Informationen handelt.</p>
+                        
+                        <h3>Links zu externen Webseiten</h3>
+                        <p>Inhalte fremder Webseiten, auf die wir direkt oder indirekt verweisen, liegen außerhalb unseres Verantwortungsbereiches und machen wir uns nicht zu Eigen.</p>
+                        
+                        <h3>Urheberrechte und Markenrechte</h3>
+                        <p>Alle auf dieser Website dargestellten Inhalte, wie Texte, Fotografien, Grafiken, Marken und Warenzeichen sind durch die jeweiligen Schutzrechte geschützt.</p>
+                    </div>
+
+                    <div class="legal-card">
+                        <h2>Hinweise zur Datenverarbeitung</h2>
+                        <p>Informationen zur Erhebung und Verarbeitung von personenbezogenen Daten finden Sie in unserer <a href="Cookies.html" class="legal-link">Datenschutzerklärung</a>.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Julian Steiner</h3>
+                    <p>Webentwickler aus Hannover</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Zurück zur Website</a></li>
+                        <li><a href="Cookies.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Julian Steiner. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Legal page specific styles */
+        .legal-section {
+            padding: var(--spacing-3xl) 0;
+        }
+
+        .legal-content {
+            display: grid;
+            gap: var(--spacing-xl);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .legal-card {
+            background: var(--bg-secondary);
+            padding: var(--spacing-xl);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+        }
+
+        .legal-card h2 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-base);
+            font-size: var(--font-size-xl);
+        }
+
+        .legal-card h3 {
+            color: var(--text-primary);
+            margin: var(--spacing-lg) 0 var(--spacing-base) 0;
+            font-size: var(--font-size-lg);
+        }
+
+        .legal-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: var(--spacing-base);
+        }
+
+        .legal-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color var(--transition-base);
+        }
+
+        .legal-link:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .legal-content {
+                padding: 0 var(--spacing-base);
+            }
+        }
+    </style>
+       
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
