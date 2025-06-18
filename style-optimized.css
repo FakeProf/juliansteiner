@@ -1047,6 +1047,14 @@ img {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+    .nav-container {
+        padding: var(--spacing-sm) var(--spacing-base);
+    }
+    
+    .nav-brand h2 {
+        font-size: var(--font-size-lg);
+    }
+    
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -1112,6 +1120,14 @@ img {
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        padding: 8px var(--spacing-base);
+    }
+    
+    .nav-brand h2 {
+        font-size: var(--font-size-base);
+    }
+    
     .hero-buttons {
         flex-direction: column;
         align-items: center;
